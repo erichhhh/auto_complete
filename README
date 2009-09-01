@@ -21,3 +21,12 @@ For more examples, see script.aculo.us:
 * http://script.aculo.us/demos/ajax/autocompleter_customized
 
 Copyright (c) 2007 David Heinemeier Hansson, released under the MIT license   
+
+
+
+
+Example for the usage with activescaffold:
+
+  def mail_form_column (record, input_name)
+    text_field_with_auto_complete :hardware, :mail, { :class => 'user-input text-input', :value => record['mail'], :id => "record_mail_#{record['id']}", :name => "record[mail]" }
+  end
